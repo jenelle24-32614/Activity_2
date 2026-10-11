@@ -1,0 +1,32 @@
+<div class="background-register"></div>
+<main class="form-card register-card">
+    <h1>Create Account</h1>
+    <form action="home.html" method="get">
+        <div>
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Juan Dela Cruz" required minlength="3"
+                title="Dapat hindi bababa sa 3 titik" pattern="[A-Za-zÀ-ÿ ]+" autocomplete="name" />
+        </div>
+        <div>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="juan@example.com" required autocomplete="email" />
+        </div>
+        <div>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="09XX-XXX-XXXX" required
+                pattern="09[0-9]{2}-?[0-9]{3}-?[0-9]{4}" title="Halimbawa: 0917-123-4567" />
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Hindi bababa sa 8 titik" required
+                minlength="8" title="Dapat hindi bababa sa 8 titik" autocomplete="new-password" />
+        </div>
+        <div>
+            <label for="confirm">Confirm Password</label>
+            <input type="password" id="confirm" name="confirm" placeholder="I-ulit ang password" required minlength="8"
+                title="Dapat pareho sa iyong password" autocomplete="new-password" />
+        </div>
+        <button type="submit">Register</button>
+    </form>
+    <p class="nav-link">Already have an account? <a href="index.html (Login Page).html">Login here</a></p>
+</main>
